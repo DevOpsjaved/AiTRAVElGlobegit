@@ -1,0 +1,187 @@
+{
+  "identity": {
+    "persona": "E1 - The Nomad Architect",
+    "philosophy": "Precision tools for the wild. We blend the romance of travel with the precision of AI.",
+    "core_principles": [
+      "Fusion: National Geographic photography x Bloomberg Terminal data density.",
+      "Emotion: Every interaction should feel like the anticipation of a trip.",
+      "Depth: Use z-index and glassmorphism to create a sense of atmosphere (fog, air, distance).",
+      "Anti-Slop: No generic 'hero image right, text left'. No default Bootstrap grids."
+    ]
+  },
+  "typography": {
+    "strategy": "The Editorial Explorer",
+    "fonts": {
+      "primary_heading": {
+        "family": "Playfair Display",
+        "usage": "Hero titles, emotional statements, destination names.",
+        "weights": ["600", "700"],
+        "letter_spacing": "-0.02em",
+        "fallback": "serif"
+      },
+      "secondary_heading": {
+        "family": "Manrope",
+        "usage": "Section headers, card titles, UI elements.",
+        "weights": ["500", "600"],
+        "fallback": "sans-serif"
+      },
+      "body": {
+        "family": "Manrope",
+        "usage": "Paragraphs, long text.",
+        "weights": ["400"],
+        "fallback": "sans-serif"
+      },
+      "data_technical": {
+        "family": "JetBrains Mono",
+        "usage": "Flight numbers, prices, dates, coordinates, technical specs.",
+        "weights": ["400"],
+        "fallback": "monospace",
+        "transform": "uppercase",
+        "size": "text-xs"
+      }
+    },
+    "rules": [
+      "Never use Inter for headings.",
+      "Use 'JetBrains Mono' for all data points (prices, dates) to give a 'cockpit' feel.",
+      "Headings must be tight (tracking-tight).",
+      "Overlines (e.g., 'DESTINATION') must be wide (tracking-widest) and tiny."
+    ]
+  },
+  "colors": {
+    "theme_name": "Eco-Futurism",
+    "palette": {
+      "primary": {
+        "name": "Deep Ocean",
+        "hex": "#0F172A",
+        "tailwind": "slate-900",
+        "usage": "Primary actions, strong branding."
+      },
+      "secondary": {
+        "name": "Clay",
+        "hex": "#C2410C",
+        "tailwind": "orange-700",
+        "usage": "Warm accents, 'Book Now' buttons, urgent notifications."
+      },
+      "accent": {
+        "name": "Electric Moss",
+        "hex": "#84CC16",
+        "tailwind": "lime-500",
+        "usage": "Success states, AI indicators, active toggles."
+      },
+      "background": {
+        "light": "#F8FAFC",
+        "dark": "#020617",
+        "paper": "#FFFFFF"
+      },
+      "neutral": {
+        "light": "#E2E8F0",
+        "dark": "#1E293B"
+      }
+    },
+    "gradients": {
+      "hero_overlay": "linear-gradient(180deg, rgba(15,23,42,0) 0%, rgba(15,23,42,0.8) 100%)",
+      "glass_surface": "linear-gradient(145deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.01) 100%)"
+    },
+    "rules": [
+      "Avoid pure black (#000000). Use Slate-950 (#020617).",
+      "Use 'Electric Moss' sparingly—only for AI moments or success.",
+      "Text on dark backgrounds must be Slate-200, not pure white (reduces eye strain)."
+    ]
+  },
+  "layout": {
+    "grid_system": {
+      "marketing": "The Tetris Grid (Asymmetric 12-col)",
+      "dashboard": "The Bento Grid (Dense 4-col)",
+      "mobile": "Single column, generous vertical spacing (gap-8)."
+    },
+    "spacing": {
+      "base_unit": "4px",
+      "container_padding": "px-6 md:px-12 lg:px-24",
+      "section_gap": "py-24 md:py-32",
+      "card_padding": "p-6 or p-8"
+    },
+    "containers": {
+      "glass_card": "backdrop-blur-xl bg-white/5 border border-white/10 shadow-2xl rounded-2xl",
+      "solid_card": "bg-card border border-border shadow-sm rounded-xl",
+      "floating_nav": "fixed top-4 left-1/2 -translate-x-1/2 w-[90%] max-w-5xl backdrop-blur-md bg-black/80 border border-white/10 rounded-full z-50"
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "rounded-full px-8 py-4 bg-primary text-white font-medium hover:scale-105 transition-transform shadow-lg shadow-primary/20",
+      "secondary": "rounded-full px-8 py-4 border border-border bg-transparent hover:bg-secondary/10 transition-colors",
+      "ghost": "text-sm font-mono uppercase tracking-widest hover:text-primary transition-colors"
+    },
+    "cards": {
+      "destination": "aspect-[3/4] relative overflow-hidden rounded-3xl group cursor-pointer",
+      "itinerary_item": "flex gap-4 p-4 border-l-2 border-border hover:border-primary transition-colors bg-card/30"
+    },
+    "inputs": {
+      "style": "h-14 bg-secondary/5 border-transparent focus:border-primary focus:ring-0 rounded-xl text-lg px-4 transition-all"
+    },
+    "navigation": {
+      "style": "Floating pill shape",
+      "location": "Top center (desktop), Bottom bar (mobile)"
+    }
+  },
+  "visual_enhancers": {
+    "glassmorphism": {
+      "usage": "Overlays, sticky headers, toast notifications.",
+      "classes": "backdrop-blur-xl bg-white/10 border border-white/20"
+    },
+    "textures": {
+      "noise": "Add a subtle noise overlay (opacity 0.03) to the entire app background to kill digital flatness.",
+      "gradients": "Use soft, large radial gradients behind hero sections."
+    },
+    "motion": {
+      "hover": "transform: translateY(-4px)",
+      "click": "transform: scale(0.98)",
+      "page_load": "staggered fade-in-up",
+      "scroll": "parallax effect on hero images"
+    },
+    "shadows": {
+      "elevation_1": "shadow-sm",
+      "elevation_2": "shadow-xl shadow-black/5",
+      "elevation_3": "shadow-2xl shadow-primary/10"
+    }
+  },
+  "assets": {
+    "icons": {
+      "library": "lucide-react",
+      "style": "Stroke width 1.5px (thin, elegant)",
+      "size": "w-5 h-5 or w-6 h-6"
+    },
+    "images": {
+      "style": "Cinematic, high contrast, natural lighting. No stock-photo smiles.",
+      "border_radius": "rounded-2xl or rounded-3xl",
+      "urls": {
+        "hero_luxury": "https://images.unsplash.com/photo-1743356174523-b04efcc66b46?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1OTN8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjB0cmF2ZWwlMjBkZXN0aW5hdGlvbiUyMGxhbmRzY2FwZXxlbnwwfHx8fDE3NzExNDY0NjF8MA&ixlib=rb-4.1.0&q=85",
+        "hero_adventure": "https://images.unsplash.com/photo-1763656259774-cbb145e9b4d3?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1OTN8MHwxfHNlYXJjaHwzfHxsdXh1cnklMjB0cmF2ZWwlMjBkZXN0aW5hdGlvbiUyMGxhbmRzY2FwZXxlbnwwfHx8fDE3NzExNDY0NjF8MA&ixlib=rb-4.1.0&q=85",
+        "lifestyle_traveler": "https://images.unsplash.com/photo-1722975777625-122ac5a60508?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDJ8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjB0cmF2ZWxlciUyMGxpZmVzdHlsZXxlbnwwfHx8fDE3NzExNDY0NjZ8MA&ixlib=rb-4.1.0&q=85",
+        "city_modern": "https://images.unsplash.com/photo-1747762679040-c02a7ff5f654?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDJ8MHwxfHNlYXJjaHwyfHxtb2Rlcm4lMjB0cmF2ZWxlciUyMGxpZmVzdHlsZXxlbnwwfHx8fDE3NzExNDY0NjZ8MA&ixlib=rb-4.1.0&q=85"
+      }
+    }
+  },
+  "accessibility": {
+    "contrast": "Ensure text meets APCA standards. Use text-shadow on image overlays.",
+    "motion": "Respect prefers-reduced-motion.",
+    "touch_targets": "Minimum 44px for all interactive elements."
+  },
+  "instructions_to_main_agent": [
+    "1. Refactor 'App.js' to use the new layout wrapper.",
+    "2. Update 'tailwind.config.js' with the new color palette (Deep Ocean, Clay, Electric Moss).",
+    "3. Create a 'Layout.js' component that implements the floating navigation and noise texture.",
+    "4. Redesign the 'LandingPage.js' using the 'Tetris Grid' and new typography.",
+    "5. Update 'TripPlannerPage.js' to use the 'Bento Grid' for the form elements.",
+    "6. Ensure all buttons use the 'rounded-full' style.",
+    "7. Replace generic 'Inter' font usage with 'Manrope' and 'Playfair Display'.",
+    "8. Use 'JetBrains Mono' for all pricing and date displays."
+  ],
+  "universal_guidelines": [
+    "Do not use gradients for text unless it's a very specific 'AI Magic' moment.",
+    "Avoid 'card' backgrounds on white pages. Use whitespace and borders instead.",
+    "Always add a subtle 'active' state to navigation items.",
+    "Use 'sonner' for all notifications.",
+    "Keep the 'AIChatBubble' but make it glassmorphic."
+  ]
+}
